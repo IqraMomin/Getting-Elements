@@ -20,3 +20,31 @@ for (let v of evenItems) {
     v.style.backgroundColor = "brown";
     v.style.color = "white";
 }
+
+//creating Elements and DOM Relations
+
+//create Element
+
+const newEle = document.createElement("h3");
+
+//create TextNode
+const newText = document.createTextNode("Buy high quality organic fruits online");
+newEle.appendChild(newText);
+
+const div = document.querySelector("#header");
+div.appendChild(newEle);
+
+newEle.style.fontStyle = "italic";
+
+const para = document.createElement("p");
+const paraText = document.createTextNode("Total fruits:4");
+para.appendChild(paraText);
+
+const getDiv = document.getElementsByTagName("div");
+const secondDiv = getDiv[1];
+
+const getUl = document.querySelector(".fruits");
+
+secondDiv.insertBefore(para, getUl);
+
+para.id = "fruits-total";
