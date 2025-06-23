@@ -1,3 +1,5 @@
+const mainheading = document.getElementById("main-heading");
+mainheading.textContent = "Fruit World";
 const fruit = document.getElementsByClassName("fruit");
 fruit[2].style.backgroundColor = "yellow";
 for (let v of fruit){
